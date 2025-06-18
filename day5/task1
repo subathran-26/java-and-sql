@@ -1,0 +1,22 @@
+
+import java.util.*;
+
+public class StudentList {
+    public static void main(String[] args) {
+        ArrayList<String> students = new ArrayList<>();
+        students.add("Abhinav");
+        students.add("nikash");
+        students.add("suba");
+
+        System.out.println("Students in ArrayList:");
+        Iterator<String> iterator = students.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+    }
+}
+OUtput:
+Students in ArrayList:
+Abhinav
+nikash
+suba
