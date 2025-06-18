@@ -1,0 +1,27 @@
+
+import java.util.Scanner;
+
+public class SimpleInterest {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Principal amount: ");
+        int principal = input.nextInt();
+        System.out.print("Enter Rate of interest: ");
+        int rate = input.nextInt();
+        System.out.print("Enter Time (in years): ");
+        int time = input.nextInt();
+        if (principal > 0 && rate > 0 && time > 0) {
+            int interest = (principal * rate * time) / 100;
+            System.out.println("Simple Interest is: " + interest);
+        } else {
+            System.out.println("Invalid input! All values must be greater than 0.");
+        }
+        input.close();
+    }
+}
+Output:
+Enter Principal amount: 1000
+Enter Rate of interest: 5
+Enter Time (in years): 2
+Simple Interest is: 100
