@@ -1,0 +1,13 @@
+
+CREATE TABLE studentmarks (
+    student_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    marks INT
+);
+insert into studentmarks values(1,'Abhinav',85),(2,'sam',80),(3,'nikash',91),(4,'suba',5),(5,'kenni',8);
+SELECT * FROM StudentMarks WHERE marks > 80;
+student_id | name     | marks
+-----------|----------|-------
+1          | Abhinav  | 85
+3          | nikash   | 91
+-------------------------------------------------------------------------------------------------------------------------
